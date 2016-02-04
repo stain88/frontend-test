@@ -6,9 +6,25 @@ function start() {
     url: 'https://hacker-news.firebaseio.com/v0/topstories.json'
   })
     .done(function(res) {
-      console.log(res);
+      var topten = res.splice(0,10);
+      getStories(topten);
     })
     .fail(function(res) {
       console.log("An error occurred: " + res);
+    });
+}
+
+function getStories(array) {
+  for (var i = 0; i < array.length; i++) {
+    $.ajax({
+      method: "GET",
+      url: "https://hacker-news.firebaseio.com/v0/item/" + array[i] + ".json"
     })
+      .done(function(res) {
+        console.log(res);
+      })
+      .fail(function(res) {
+        console.log("An error occurred: " + res);
+      })
+  }
 }
