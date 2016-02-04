@@ -1,0 +1,42 @@
+h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.story {
+  width: 20%;
+  display: inline-block;
+  border: 1px solid black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 9px #226666;
+  -moz-box-shadow: 0 9px #226666;
+  box-shadow: 0 9px #226666;
+  margin-bottom: 10px;
+  min-height: 80px;
+  vertical-align: middle;
+  background-color: #669999;
+  font-size: 16px;
+}
+
+.story:hover {
+  background-color: #428181;
+}
+
+.story:active {
+  -webkit-box-shadow: 0 5px #666;
+  -moz-box-shadow: 0 5px #666;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.story:focus {
+  outline: none;
+}

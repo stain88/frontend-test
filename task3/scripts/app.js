@@ -30,6 +30,5 @@ function getStories(array) {
 }
 
 function addStory(story) {
-  console.log(story);
-  $('#topstories').append('<a href="' + story.url + '" target="_blank"><li>' + story.title + '</li></a>');
+  $('#topstories').append('<a href="' + story.url + '" target="_blank"><button class="story">' + story.title + '</button></a>');
 }
