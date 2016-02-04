@@ -21,10 +21,14 @@ function getStories(array) {
       url: "https://hacker-news.firebaseio.com/v0/item/" + array[i] + ".json"
     })
       .done(function(res) {
-        console.log(res);
+        addStory(res);
       })
       .fail(function(res) {
         console.log("An error occurred: " + res);
       })
   }
+}
+
+function addStory(story) {
+  $('#topstories').append('<li>' + story.title + '</li>');
 }
