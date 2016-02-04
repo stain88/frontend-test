@@ -17,9 +17,13 @@ li {
   text-align: center;
 }
 
-li a {
+a li {
   text-decoration: none;
   color: white;
+}
+
+li:hover {
+  background-color: black;
 }
 
 .box1 {
