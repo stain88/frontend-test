@@ -9,13 +9,13 @@
   width: 20%;
   height: 100vh;
   background-color: #551a8b;
-  list-style-type: none;
 }
 
 li {
   width: 100%;
   line-height: 10vh;
   text-align: center;
+  list-style: none;
 }
 
 a li {
