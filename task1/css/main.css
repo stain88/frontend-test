@@ -41,13 +41,13 @@ img {
   float: left;
   width: 80%;
   height: 50vh;
-  background-image: url("http://lorempixel.com/400/200/cats");
+  background-image: url("http://lorempixel.com/400/200/cats/1");
   background-size: cover;
 }
 
 @media only screen and (max-width: 768px) {
   .box2 {
-    background-image: url("http://lorempixel.com/768/768/cats");
+    background-image: url("http://lorempixel.com/768/768/cats/4");
   }
 }
 
@@ -68,6 +68,6 @@ img {
 
   .box2 {
     width: 100%;
-    background-image: url("http://lorempixel.com/480/480/cats");
+    background-image: url("http://lorempixel.com/480/480/cats/3");
   }
 } 
